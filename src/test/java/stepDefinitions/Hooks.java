@@ -24,10 +24,11 @@ public class Hooks {
     public void setup() throws IOException
     {
     	driver=BaseClass.initilizeBrowser();
+    	ts=(TakesScreenshot) driver;
     	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     	p=BaseClass.getProperties();
     	driver.get(p.getProperty("appURL"));
-    	ts=(TakesScreenshot) driver;
+    	
     	
     	driver.manage().window().maximize();
 	}
