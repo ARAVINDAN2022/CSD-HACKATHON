@@ -1,4 +1,4 @@
-Feature: Verify the Search Functionality of Cab
+Feature: Verify the Search Functionality of Hotels tab
 
   @smoke
   Scenario: Successful of Search

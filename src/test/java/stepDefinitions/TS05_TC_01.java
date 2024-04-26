@@ -51,6 +51,8 @@ public class TS05_TC_01
 		   Assert.assertTrue(true);
 	   }
 	}
+	
+	//name is given
 	@Given("enter the required details1 {string}")
 	public void enter_the_required_details(String rows) throws Exception 
 	{
@@ -73,7 +75,7 @@ public class TS05_TC_01
        birthdaypage.recipientsMail(rmail);
        birthdaypage.buyNow();	
 	}
-	
+	//sender no is given
 	@Given("enter the required details2 {string}")
 	public void enter_the_required_details2(String rows) throws Exception 
 	{
@@ -96,6 +98,9 @@ public class TS05_TC_01
        birthdaypage.recipientsMail(rmail);
        birthdaypage.buyNow();	
 	}
+	
+	
+	//Recipient email is given
 	@Given("enter the required details3 {string}")
 	public void enter_the_required_details3(String rows) throws Exception 
 	{
@@ -118,7 +123,7 @@ public class TS05_TC_01
        birthdaypage.recipientsMail(rmail);
        birthdaypage.buyNow();	
 	}
-	
+	//checking name isn valid or not
 	@Then("check the details entered is valid recipient name {string}")
 	public void check_the_details_entered_is_valid_recipient_name(String rows) throws Exception 
 	{
@@ -158,7 +163,7 @@ public class TS05_TC_01
 	   }
 	}
 	
-	
+	//checking whether sender mobile no is valid or not
 	@Then("check the details entered is valid sender mobile Number {string}")
 	public void check_the_details_entered_is_valid_sender_mobileNo(String rows) throws Exception 
 	{
@@ -198,7 +203,7 @@ public class TS05_TC_01
 	   }
 	}
 
-	
+	//then checking recipient mail is valid or not
 	@Then("check the details entered is valid sender Recipient mailid {string}")
 	public void check_the_details_entered_is_valid_sender_Recipient_mailid(String rows) throws Exception 
 	{
